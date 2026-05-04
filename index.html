@@ -69,68 +69,22 @@
             margin-bottom: 32px;
         }
 
-        .features {
+        .itch-widget-wrapper {
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 40px;
-            gap: 15px;
-        }
-
-        .feature-item {
-            background: rgba(255, 255, 255, 0.02);
-            padding: 16px;
-            border-radius: 10px;
-            width: 30%;
-        }
-
-        .feature-item h3 {
-            font-size: 1.1rem;
-            color: #ffffff;
-            margin-bottom: 6px;
-        }
-
-        .feature-item p {
-            font-size: 0.85rem;
-            margin-bottom: 0;
-        }
-
-        .cta-button {
-            display: inline-flex;
-            align-items: center;
             justify-content: center;
-            background-color: var(--accent-color);
-            color: #ffffff;
-            padding: 16px 32px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 14px rgba(88, 166, 255, 0.3);
-            width: 100%;
-            max-width: 400px;
+            margin: 32px 0;
         }
 
-        .cta-button:hover {
-            background-color: #3b82f6;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(88, 166, 255, 0.4);
+        iframe {
+            border: none;
+            border-radius: 10px;
+            max-width: 100%;
         }
 
         footer {
             margin-top: 40px;
             font-size: 0.8rem;
             color: var(--text-muted);
-        }
-
-        @media (max-width: 600px) {
-            .features {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .feature-item {
-                width: 100%;
-            }
         }
     </style>
 </head>
@@ -143,24 +97,11 @@
         
         <p>Explore a dinâmica dos movimentos de rotação e translação desenvolvida em Unity 3D, simulando o comportamento da Terra no espaço.</p>
 
-        <div class="features">
-            <div class="feature-item">
-                <h3>Rotação</h3>
-                <p>Eixo vertical realista</p>
-            </div>
-            <div class="feature-item">
-                <h3>Órbita</h3>
-                <p>Translação orbital</p>
-            </div>
-            <div class="feature-item">
-                <h3>Interativo</h3>
-                <p>Controles em tempo real</p>
-            </div>
+        <div class="itch-widget-wrapper">
+            <iframe frameborder="0" src="https://itch.io/embed/4541367" width="552" height="167">
+                <a href="https://guilhermearaujo.itch.io/terraweb">TerraWeb by guilhermearaujo</a>
+            </iframe>
         </div>
-
-        <a href="https://guilhermearaujo.itch.io/terraweb" class="cta-button" target="_blank">
-            Jogar no Itch.io
-        </a>
 
         <footer>
             Desenvolvido com Unity &hearts;
